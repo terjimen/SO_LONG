@@ -6,13 +6,19 @@
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 20:18:21 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/01 20:25:43 by terjimen         ###   ########.fr       */
+/*   Updated: 2024/10/03 19:37:53 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #ifndef LINUX_KEYS_H
 # define LINUX_KEYS_H
+
+#include<signal.h>
+#include<unistd.h>
+#include<stdlib.h>
+#include<sys/types.h>
+#include <libftprintf/include/ft_printf.h>
 
 /*
 ** Keyboard alphabet

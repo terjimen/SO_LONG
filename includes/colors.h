@@ -6,19 +6,19 @@
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 20:27:00 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/03 18:41:33 by terjimen         ###   ########.fr       */
+/*   Updated: 2024/10/03 19:37:09 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef ANSI_COLORS_H
-# define ANSI_COLORS_H
+#ifndef COLORS_H
+# define COLORS_H
 
 #include<signal.h>
 #include<unistd.h>
 #include<stdlib.h>
 #include<sys/types.h>
-#include "libftprintf/libftprintf.a"
+#include <libftprintf/include/ft_printf.h>
 
 //NWS = not widely supported
 //possible escape seqences :

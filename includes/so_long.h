@@ -6,7 +6,7 @@
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 19:15:02 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/03 18:41:32 by terjimen         ###   ########.fr       */
+/*   Updated: 2024/10/03 19:35:25 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@
 # include<errno.h>
 # include <libft.h>
 # include <mlx/mlx.h>
-# include "ansi_colors.h"
-# include "linux_keys.h"
-# include "../mlx/mlx_int.h"
+# include <includes/colors.h>
+# include <includes/key.h>
+# include <mlx/mlx.h>
 
 
 # ifndef WIN_HEIGHT
@@ -39,6 +39,15 @@
 # ifndef TILE_SIZE
 #  define TILE_SIZE 64
 # endif
+
+typedef struct	s_data {
+	void	*img;
+	char	*addr;
+	int		bits_per_pixel;
+	int		line_length;
+	int		endian;
+}				t_data;
+
 
 typedef struct s_tile
 {
