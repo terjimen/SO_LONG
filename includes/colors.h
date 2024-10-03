@@ -6,7 +6,7 @@
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 20:27:00 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/01 21:57:19 by terjimen         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:41:33 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 #ifndef ANSI_COLORS_H
 # define ANSI_COLORS_H
 
-# include<signal.h>
-# include<unistd.h>
-# include<stdlib.h>
-# include<sys/types.h>
-# include "libftprintf/libftprintf.a"
+#include<signal.h>
+#include<unistd.h>
+#include<stdlib.h>
+#include<sys/types.h>
+#include "libftprintf/libftprintf.a"
 
 //NWS = not widely supported
 //possible escape seqences :

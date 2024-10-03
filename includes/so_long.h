@@ -6,14 +6,14 @@
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 19:15:02 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/01 20:44:38 by terjimen         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:41:32 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
-/*
+
 # include<sys/types.h>
 # include<sys/stat.h>
 # include<fcntl.h>
@@ -55,7 +55,7 @@ typedef struct s_tile
 inventory: would also work for ennemy 
 	-> when it "walks" over player, player is added to inventory, end of game
 */
-/*
+
 typedef struct s_character
 {
 	int				x_char;
@@ -69,7 +69,7 @@ typedef struct s_character
  elder_index: if hero walked next to elders, then items turn into necronomicon
  no, i don't know how to implement it at the moment
 */
-/*
+
 typedef struct s_map
 {
 	int				x_map;
@@ -197,6 +197,6 @@ void	move_counter(t_game *game, int mover);
 void	update_display(t_game *game, int next_y, int next_x);
 void	load_exit(t_game *game);
 void	check_next_tile(t_game *game, int tile_code, char mod);
-*/
+
 #endif
 
