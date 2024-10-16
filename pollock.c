@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   pollock.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 19:15:02 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/16 21:19:26 by terjimen         ###   ########.fr       */
+/*   Created: 2024/10/16 21:52:33 by terjimen          #+#    #+#             */
+/*   Updated: 2024/10/16 22:02:24 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#ifndef SO_LONG_H
-# define SO_LONG_H
-
-# include <sys/types.h>
-# include <sys/stat.h>
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdlib.h>
-# include <string.h>
-# include <errno.h>
-# include "libftprintf/include/libft.h"
-# include <stdbool.h>
 #include "minilibx-linux/mlx.h"
+int main (void)
+{
+    void    *mlx_connection;
+    void    *mlx_window;
+
+    mlx_connection = mlx_init();
+    mlx_window = mlx_new_window(mlx_connection, 500, 500, "mi ventana");
+}
 
 
-
-
-
-#endif // SO_LONG_H
-
+/*
+pollock:
+"https://www.youtube.com/watch?v=9eAPbNUQD1Y"
+*/
