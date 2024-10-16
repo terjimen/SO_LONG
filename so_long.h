@@ -6,7 +6,7 @@
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 19:15:02 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/14 18:47:36 by terjimen         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:33:10 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 # include <errno.h>
 # include "libftprintf/include/libft.h"
 # include <stdbool.h>
-# include "mlx/include/MLX42/MLX42.h"
+#include "minilibx-linux/mlx.h"
 
 typedef struct s_game {
     mlx_t *mlx;            // Puntero a la estructura MLX
@@ -42,3 +42,4 @@ void handle_input(t_game *game);
 void clean_up(t_game *game);
 
 #endif // SO_LONG_H
+
