@@ -6,11 +6,12 @@
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 16:08:16 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/15 16:35:49 by terjimen         ###   ########.fr       */
+/*   Updated: 2024/10/17 13:41:54 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minilibx-linux/mlx.h"
+
+#include "so_long.h"
 #include <stdlib.h>
 
 #define MALLOC_ERROR	1
@@ -43,27 +44,6 @@ int	main()
         free(mlx_connection);
         return (MALLOC_ERROR);
     }
-
-	// EVENT LOOP
-	// Without this loop the process will stop immediately
-	/*
-	 * The minilibx library has a function called mlx_loop. 
-	 * This function starts what's known as an event loop. 
-	 * An event loop keeps the application running and constantly 
-	 * checks for events, such as user input (like mouse clicks or keyboard presses). 
-	 * As long as the application is running, this loop continues to execute.
-
-	IMPLEMENTATION
-	https://github.com/42Paris/minilibx-linux/blob/7dc53a411a7d4ae286c60c6229bd1e395b0efb82/mlx_loop.c#L37
-
-	The concept can be likened to:
-
-		while (application is running) 
-		{
-			check for events;
-				execute associated functions for those events;
-		}
-	*/
 	mlx_loop(mlx_connection);
 
 

@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pollock.c                                          :+:      :+:    :+:   */
+/*   check_exit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 21:52:33 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/16 22:02:24 by terjimen         ###   ########.fr       */
+/*   Created: 2024/10/17 13:36:27 by terjimen          #+#    #+#             */
+/*   Updated: 2024/10/17 13:41:50 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minilibx-linux/mlx.h"
-int main (void)
+#include "so_long.h"
+
+int	check_exit(t_list *d, char letter)
 {
-    void    *mlx_connection;
-    void    *mlx_window;
-
-    mlx_connection = mlx_init();
-    mlx_window = mlx_new_window(mlx_connection, 500, 500, "mi ventana");
+	if (letter == 'E' && d->consum == 0)
+	{
+		write(1, "Congrats, you win 🥳🏆\n", 27);
+		ft_free(d);
+	}
+	if (letter == 'E' && d->consum != 0)
+	{
+		write(1, "Necesitas recoger todos los consumibles!\n", 41);
+		return (1);
+	}
+	else
+		return (0);
 }
-
-
-/*
-pollock:
-"https://www.youtube.com/watch?v=9eAPbNUQD1Y"
-*/

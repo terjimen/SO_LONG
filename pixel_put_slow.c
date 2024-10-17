@@ -6,11 +6,13 @@
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:52:17 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/16 20:01:12 by terjimen         ###   ########.fr       */
+/*   Updated: 2024/10/17 13:15:59 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minilibx-linux/mlx.h"
+# include "libftprintf/include/libft.h"
+# include "libftprintf/include/ft_printf.h"
 #include <X11/keysym.h>
 #include <stdlib.h>
 

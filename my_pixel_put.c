@@ -6,11 +6,12 @@
 /*   By: terjimen <terjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 20:02:49 by terjimen          #+#    #+#             */
-/*   Updated: 2024/10/16 20:47:17 by terjimen         ###   ########.fr       */
+/*   Updated: 2024/10/17 13:41:57 by terjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minilibx-linux/mlx.h"
+# include "so_long.h"
 #include <X11/keysym.h>
 #include <stdlib.h>
 #include <stdio.h>
